@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toy Car Product</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to your CSS file -->
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="toy_car.png" alt="logo" class="img">
+            <a href="#">Toy Car</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Toy Car Product Details</h1>
+    <ul id="productList"></ul>
+    <h2>Update Property</h2>
+    <form onsubmit="event.preventDefault(); updateProperty();">
+        <label for="property">Property:</label><br>
+        <input type="text" id="property" name="property"><br>
+        <label for="newValue">New Value:</label><br>
+        <input type="text" id="newValue" name="newValue"><br>
+        <input type="submit" value="Update">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
